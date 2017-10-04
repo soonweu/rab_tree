@@ -1,0 +1,45 @@
+crash_type_mix
+
+Classification tree:
+rpart(formula = crash.type ~ AADTMaj + AADTMin + RABRad + LnWdth + 
+    DefAngl + FlareLngth + entryRadius + YieldOnLeft + SawtoothYieldMark + 
+    YieldPvtMark + sharktoothORYIELD + PedCrossMark + ContRTLn + 
+    ramp, data = train, method = "class")
+
+Variables actually used in tree construction:
+[1] AADTMaj     AADTMin     DefAngl     entryRadius FlareLngth 
+[6] RABRad     
+
+Root node error: 745/1053 = 0.7075
+
+n= 1053 
+
+       CP nsplit rel error xerror    xstd
+1 0.01745      0    1.0000 1.0000 0.01981
+2 0.01477      4    0.9181 0.9503 0.02044
+3 0.01275      5    0.9034 0.9302 0.02066
+4 0.01000      8    0.8644 0.8966 0.02098
+
+
+crash_type_approach
+
+Classification tree:
+rpart(formula = crash.type ~ AADTMaj + AADTMin + RABRad + LnWdth + 
+    DefAngl + FlareLngth + entryRadius + YieldOnLeft + SawtoothYieldMark + 
+    YieldPvtMark + sharktoothORYIELD + PedCrossMark + ContRTLn + 
+    ramp, data = train, method = "class")
+
+Variables actually used in tree construction:
+[1] AADTMaj    AADTMin    DefAngl    FlareLngth RABRad    
+
+Root node error: 558/817 = 0.683
+
+n= 817 
+
+       CP nsplit rel error xerror    xstd
+1 0.03763      0    1.0000 1.0000 0.02384
+2 0.02867      1    0.9624 0.9910 0.02396
+3 0.01643      2    0.9337 0.9588 0.02435
+4 0.01613      9    0.8154 0.9229 0.02473
+5 0.01254     10    0.7993 0.9211 0.02474
+6 0.01000     11    0.7867 0.8943 0.02498
